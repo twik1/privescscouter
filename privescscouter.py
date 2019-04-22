@@ -13,7 +13,8 @@ result = []
 sysInfo = {"Operating System": {"cmd": "cat /etc/issue", "result": result},
            "Hostname": {"cmd": "hostname", "result": result},
            "Kernel ring buffer": {"cmd": "dmesg", "result": result},
-           "Kernel loaded modules": {"cmd": "lsmod", "result": result}
+           "Kernel loaded modules": {"cmd": "lsmod", "result": result},
+           "System up-time": {"cmd": "uptime", "result":result}
            }
 
 driveInfo = {"Mount results": {"cmd": "mount", "result": result},
