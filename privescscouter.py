@@ -229,7 +229,7 @@ class History(CmdInstance):
 
 if __name__ == '__main__':
     privesc_parameter = {}
-    parser = argparse.ArgumentParser(description='Linux Privilege Escalation Collector v0.1')
+    parser = argparse.ArgumentParser(description='Linux Privilege Escalation Scouter v0.1')
     parser.add_argument('-p', '--print', help='Print command and output on std out', action="store_true",
                         required=False)
     parser.add_argument('-c', '--confirm', help='Confirm every command', action="store_true",
@@ -248,7 +248,7 @@ if __name__ == '__main__':
     file = False
     output = Output(flags, args.log)
 
-    output.out('\nLinux Privilege Escalation Collector v.0.1')
+    output.out('\nLinux Privilege Escalation Scouter v.0.1')
     output.out('------------------------------------------\n\n')
 
     # Get all aliases so that no command is changed
